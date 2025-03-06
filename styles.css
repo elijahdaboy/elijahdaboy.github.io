@@ -1,0 +1,42 @@
+h1 {
+  font-size: 40px;
+  font-family: Trebuchet MS, sans-serif;
+  text-align: center;
+}
+body {
+  background-color: #EBF1F1;
+}
+img {
+  position: relative;
+  left: px;
+  top: 250px;
+  display: block;
+  margin-left: auto;
+}
+h2 {
+  text-align: right;
+  position: relative;
+  top: 100px;
+  font-family: arial;
+}
+input {
+  position: relative;
+  top: -100px;
+  display: block;
+}
+button {
+  position: relative;
+  top: -100px;
+}
+div {
+  position: relative;
+  top: -100px;
+}
+h3 {
+  position: relative;
+  top: -100px;
+}
+a {
+  position: relative;
+  top: -100px;
+}
