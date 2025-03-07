@@ -17,14 +17,14 @@ input {
   position: static;
   top: -500px;
   display: block;
-  background-color: #EBF1F1;
-  border-color: #7f7f7f;
+  background-color: #FFFFFF;
+  border: none;
 }
 button {
   position: static;
   top: -500px;
-  background-color: #EBF1F1;
-  border-color: #7f7f7f;
+  background-color: #FFFFFF;
+  border: none;
 }
 div {
   position: static;
