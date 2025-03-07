@@ -2,7 +2,7 @@ const apiKey = "bd5e378503939ddaee76f12ad7a97608";
 
 document.getElementById("getWeather").addEventListener("click", () => {
   const city = document.getElementById("city").value;
-  const apiUrl = 'http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial';
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
 
   fetch(apiUrl)
     .then((response) => {
