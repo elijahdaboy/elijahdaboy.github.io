@@ -9,28 +9,28 @@ body {
 img {
   position: relative;
   left: px;
-  top: 250px;
+  top: 150px;
   display: block;
   margin-left: auto;
 }
 input {
   position: relative;
-  top: -100px;
+  top: -200px;
   display: block;
 }
 button {
   position: relative;
-  top: -100px;
+  top: -200px;
 }
 div {
   position: relative;
-  top: -100px;
+  top: -200px;
 }
 h3 {
   position: relative;
-  top: -100px;
+  top: -200px;
 }
 a {
   position: relative;
-  top: -100px;
+  top: -200px;
 }
