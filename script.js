@@ -1,8 +1,10 @@
+const BASE_URL = 'https://api.openweathermap.org/data/2.5/';
 const apiKey = "bd5e378503939ddaee76f12ad7a97608";
 
 document.getElementById("getWeather").addEventListener("click", () => {
   const city = document.getElementById("city").value;
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+  const forecastResponse = await fetch(`${BASE_URL}forecast?q=${city}&appid=${apiKey}&units=metric`);
 
   fetch(apiUrl)
     .then((response) => {
