@@ -7,9 +7,9 @@ body {
   background-color: #EBF1F1;
 }
 img {
-  position: relative;
+  position: static;
   left: px;
-  top: 150px;
+  top: 50px;
   display: block;
   margin-left: auto;
 }
