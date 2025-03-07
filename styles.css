@@ -13,12 +13,6 @@ img {
   display: block;
   margin-left: auto;
 }
-h2 {
-  text-align: right;
-  position: relative;
-  top: -225px;
-  font-family: arial;
-}
 input {
   position: relative;
   top: -100px;
