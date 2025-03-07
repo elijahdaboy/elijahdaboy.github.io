@@ -17,10 +17,12 @@ input {
   position: static;
   top: -500px;
   display: block;
+  background-color: #EBF1F1;
 }
 button {
   position: static;
   top: -500px;
+  background-color: #EBF1F1;
 }
 div {
   position: static;
