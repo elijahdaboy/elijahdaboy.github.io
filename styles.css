@@ -17,6 +17,7 @@ input {
   position: static;
   top: -500px;
   display: block;
+  block-size: 150px
 }
 button {
   position: static;
