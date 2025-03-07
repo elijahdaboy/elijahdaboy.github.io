@@ -78,4 +78,3 @@ if (minutes == 8) {
 }
 if (minutes == 9) {
   minutes = "09";
-}
