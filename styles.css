@@ -1,0 +1,44 @@
+h1 {
+  font-size: 40px;
+  font-family: Trebuchet MS, sans-serif;
+  text-align: center;
+}
+body {
+  background-color: #EBF1F1;
+}
+img {
+  position: static;
+  left: px;
+  top: 50px;
+  display: block;
+  margin-left: auto;
+}
+input {
+  position: static;
+  top: -500px;
+  display: block;
+  background-color: #FFFFFF;
+  border: none;
+}
+button {
+  position: static;
+  top: -500px;
+  background-color: #FFFFFF;
+}
+div {
+  position: static;
+  top: -500px;
+}
+h3 {
+  position: static;
+  top: -500px;
+}
+a {
+  position: static;
+  top: -500px;
+  left: px;
+}
+#brook{
+  position: static;
+  top:-100px
+}
