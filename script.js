@@ -5,6 +5,26 @@ document.getElementById("getWeather").addEventListener("click", () => {
   const city = document.getElementById("city").value;
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
   const forecastResponse = await fetch(`${BASE_URL}forecast?q=${city}&appid=${apiKey}&units=metric`);
+  const forecastData = await forecastResponse.json();
+        displayForecast(forecastData);}
+function displayForecast(data) {
+    const forecastBody = document.getElementById('forecastBody');
+    forecastBody.innerHTML = '';
+
+    // Forecast data comes in 3-hour intervals, so we'll filter to get daily forecasts
+    const dailyForecasts = data.list.filter(item => item.dt_txt.includes('12:00:00'));
+    dailyForecasts.forEach(forecast => {
+        const date = new Date(forecast.dt_txt).toLocaleDateString();
+        forecastBody.innerHTML += `
+            <tr>
+                <td>${date}</td>
+                <td>${forecast.main.temp}°C</td>
+                <td>${forecast.weather[0].description}</td>
+            </tr>
+        `;
+    });
+}
+Conclusion
 
   fetch(apiUrl)
     .then((response) => {
