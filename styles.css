@@ -18,11 +18,13 @@ input {
   top: -500px;
   display: block;
   background-color: #EBF1F1;
+  border-color: #7f7f7f;
 }
 button {
   position: static;
   top: -500px;
   background-color: #EBF1F1;
+  border-color: #7f7f7f;
 }
 div {
   position: static;
