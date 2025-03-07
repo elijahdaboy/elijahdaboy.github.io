@@ -14,23 +14,23 @@ img {
   margin-left: auto;
 }
 input {
-  position: relative;
+  position: static;
   top: -300px;
   display: block;
 }
 button {
-  position: relative;
+  position: static;
   top: -300px;
 }
 div {
-  position: relative;
+  position: static;
   top: -300px;
 }
 h3 {
-  position: relative;
+  position: static;
   top: -300px;
 }
 a {
-  position: relative;
+  position: static;
   top: -300px;
 }
