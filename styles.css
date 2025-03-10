@@ -11,7 +11,7 @@ img {
   left: px;
   top: 50px;
   display: block;
-  margin-left: auto;
+  margin: auto;
 }
 input {
   position: static;
@@ -19,26 +19,23 @@ input {
   display: block;
   background-color: #FFFFFF;
   border: none;
+  margin: auto;
 }
-button {
+#getWeather {
   position: static;
   top: -500px;
   background-color: #FFFFFF;
-}
-div {
-  position: static;
-  top: -500px;
+  margin: auto;
+  display: block;
 }
 h3 {
   position: static;
   top: -500px;
+  text-align: center;
 }
-a {
+h4 {
   position: static;
   top: -500px;
   left: px;
-}
-#brook{
-  position: static;
-  top:-100px
+  text-align: center;
 }
