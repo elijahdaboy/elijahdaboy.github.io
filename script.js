@@ -5,8 +5,6 @@ document.getElementById("getWeather").addEventListener("click", () => {
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
   forecastUrl = `api.openweathermap.org/data/2.5/forecast?q={city}&appid={apiKey}`
   fetch(forecastUrl)
-  let data = await res.json();
-      console.log("data", data);
 
   fetch(apiUrl)
     .then((response) => {
