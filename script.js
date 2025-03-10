@@ -80,5 +80,5 @@ if (minutes == 9) {
   minutes = "09";
 }
 if (minutes == 0){
-  minutes == "00"
+  minutes = "00"
 }
