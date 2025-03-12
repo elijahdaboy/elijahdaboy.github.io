@@ -1,8 +1,17 @@
+measurement="?"
+units="?"
+var user;
+function choose(choice){
+    measurement = choice;
+}
 const apiKey = "bd5e378503939ddaee76f12ad7a97608";
-
+var user;
+function choose(choice){
+    measurement = choice;
+}
 document.getElementById("getWeather").addEventListener("click", () => {
   const city = document.getElementById("city").value;
-  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${measurement}`;
 
   fetch(apiUrl)
     .then((response) => {
@@ -14,10 +23,13 @@ document.getElementById("getWeather").addEventListener("click", () => {
     .then((data) => {
       const temperature = data.main.temp;
       const weatherDescription = data.weather[0].description;
-
       const resultDiv = document.getElementById("weatherResult");
-      resultDiv.innerHTML = `
-        <p>Temperature: ${temperature}°F</p>
+    if (measurement == 'imperial')
+      measureprint = 'F'
+    else if (measurement == 'metric')
+      measureprint = 'C'
+    resultDiv.innerHTML = `
+        <p>Temperature: ${temperature}${measureprint}</p>
         <p>Weather: ${weatherDescription}</p>
       `;
     })
