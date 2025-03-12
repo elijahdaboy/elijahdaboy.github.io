@@ -6,13 +6,7 @@ h1 {
 body {
   background-color: #EBF1F1;
 }
-img {
-  position: static;
-  left: px;
-  top: 50px;
-  display: block;
-  margin: auto;
-}
+
 input {
   position: static;
   top: -500px;
@@ -42,4 +36,18 @@ h4 {
 h5{
   position: static;
   text-align: center;
+}
+.brook{
+  position: static;
+  left: px;
+  top: 50px;
+  display: block;
+  margin: auto;
+}
+.weather{
+  position: static;
+  left: px;
+  top: 50px;
+  display: block;
+  margin: auto;
 }
