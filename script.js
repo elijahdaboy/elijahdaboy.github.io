@@ -30,7 +30,6 @@ const now = new Date();
 const day = now.getDay();
 const hours = now.getHours();
 minutes = now.getMinutes();
-console.log(`Today is day ${day} and the time is ${hours}:${minutes}.`);
 if (day == 0) {
   weekday = "Sunday";
 }
@@ -82,3 +81,4 @@ if (minutes == 9) {
 if (minutes == 0){
   minutes = "00"
 }
+console.log(`Today is ${weekday} and the time is ${hours}:${minutes}.`);
