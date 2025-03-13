@@ -6,7 +6,9 @@ h1 {
 body {
   background-color: #EBF1F1;
 }
-
+#weatherResult{
+  display: block;
+  margin: auto;
 input {
   position: static;
   top: -500px;
@@ -31,10 +33,6 @@ h4 {
   position: static;
   top: -500px;
   left: px;
-  text-align: center;
-}
-h5{
-  position: static;
   text-align: center;
 }
 .brook{
