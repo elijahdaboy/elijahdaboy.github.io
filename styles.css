@@ -6,9 +6,8 @@ h1 {
 body {
   background-color: #EBF1F1;
 }
-#weatherResult{
-  display: block;
-  margin: auto;
+h5{
+  text-align: center;
 }
 input {
   position: static;
