@@ -17,7 +17,7 @@ input {
 }
 #getWeather {
   position: static;
-  top: -px;
+  top: -500px;
   background-color: #FFFFFF;
   margin: auto;
   display: block;
@@ -50,18 +50,4 @@ h5{
   top: 50px;
   display: block;
   margin: auto;
-}
-#f{
-  position: static;
-  top: -500px;
-  background-color: #FFFFFF;
-  margin: auto;
-  display: block;
-}
-#c{
-  position: static;
-  top: -500px;
-  background-color: #FFFFFF;
-  margin: auto;
-  display: block;
 }
