@@ -34,8 +34,9 @@ h4 {
   text-align: center;
 }
 h5{
+  display: block;
   position: static;
-  text-align: center;
+  margin: auto;
 }
 .brook{
   position: static;
