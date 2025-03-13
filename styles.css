@@ -9,6 +9,7 @@ body {
 #weatherResult{
   display: block;
   margin: auto;
+}
 input {
   position: static;
   top: -500px;
