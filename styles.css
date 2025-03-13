@@ -15,7 +15,7 @@ input {
   border: none;
   margin: auto;
 }
-#getWeather {
+div {
   position: static;
   top: -500px;
   background-color: #FFFFFF;
@@ -32,11 +32,6 @@ h4 {
   top: -500px;
   left: px;
   text-align: center;
-}
-h5{
-  display: block;
-  position: static;
-  margin: auto;
 }
 .brook{
   position: static;
