@@ -17,7 +17,7 @@ input {
 }
 #getWeather {
   position: static;
-  top: -500px;
+  top: -200px;
   background-color: #FFFFFF;
   margin: auto;
   display: block;
