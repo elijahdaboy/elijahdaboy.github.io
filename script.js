@@ -117,4 +117,7 @@ function updateWeather() {
     })
     .catch(error => console.error("Error fetching weather data:", error));
 }
+
+setInterval(updateWeather, 1000);
+
 console.log(`Today is ${weekday} and the time is ${hours}:${minutes}.`);
