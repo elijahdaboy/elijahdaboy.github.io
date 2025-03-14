@@ -9,7 +9,6 @@ body {
 
 input {
   position: static;
-  top: -500px;
   display: block;
   background-color: #FFFFFF;
   border: none;
@@ -17,7 +16,6 @@ input {
 }
 #getWeather {
   position: static;
-  top: -500px;
   background-color: #FFFFFF;
   margin: auto;
   display: block;
@@ -25,12 +23,10 @@ input {
 }
 h3 {
   position: static;
-  top: -500px;
   text-align: center;
 }
 h4 {
   position: static;
-  top: -500px;
   left: px;
   text-align: center;
 }
@@ -40,27 +36,21 @@ h5{
 }
 .brook{
   position: static;
-  left: px;
-  top: 50px;
   display: block;
   margin: auto;
 }
 .weather{
   position: static;
-  left: px;
-  top: 50px;
   display: block;
   margin: auto;
 }
 #f{
 position: static;
-  top: -500px;
   margin: auto;
   display: block;
 }
 #c{
 position: static;
-  top: -500px;
   margin: auto;
   display: block;
 }
