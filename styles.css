@@ -65,9 +65,7 @@ position: static;
   display: block;
 }
 #weather-image{
-  display: block;
-  top: -500px;
-  position: fixed;
-  bottom: 0;
-  right: 0;
+  position:absolute;
+  right:0;
+  bottom:0;
 }
