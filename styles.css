@@ -64,3 +64,7 @@ position: static;
   margin: auto;
   display: block;
 }
+#weather-image{
+top: -500px;
+  margin-right: auto;
+}
