@@ -1,10 +1,6 @@
 weatherDescription="?"
 measurement="?"
 units="?"
-var user;
-function choose(choice){
-    measurement = choice;
-}
 const apiKey = "bd5e378503939ddaee76f12ad7a97608";
 var user;
 function choose(choice){
