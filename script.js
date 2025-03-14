@@ -94,13 +94,4 @@ if (minutes == 9) {
 if (minutes == 0){
   minutes = "00"
 }
-function checkiffinished() {
-if (weatherDescription == "overcast clouds"){
-    document.createElement("img");
-    img.src = "images/pixel-gif-drawing(2).gif"
-    img.alt = ""
-clearInterval(interval);
-}};
-
-var interval = setInterval(checkiffinished, 1000);
 console.log(`Today is ${weekday} and the time is ${hours}:${minutes}.`);
