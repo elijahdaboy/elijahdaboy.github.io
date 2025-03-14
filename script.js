@@ -94,4 +94,27 @@ if (minutes == 9) {
 if (minutes == 0){
   minutes = "00"
 }
+function updateWeather() {
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`)
+    .then(response => response.json())
+    .then(data => {
+      const weatherDescription = data.weather[0].description;
+      document.getElementById('weather-description').textContent = weatherDescription;
+
+      const weatherImage = document.getElementById('weather-image');
+      
+      if (weatherDescription.includes("clear")) {
+        weatherImage.src = "clear-sky.jpg";
+      } else if (weatherDescription.includes("rain")) {
+        weatherImage.src = "rainy.jpg";
+      } else if (weatherDescription.includes("cloud")) {
+        weatherImage.src = "images/pixil-gif-drawing (2).gif";
+      } else {
+        weatherImage.src = "default-weather.jpg";
+      }
+
+      weatherImage.style.display = "block";
+    })
+    .catch(error => console.error("Error fetching weather data:", error));
+}
 console.log(`Today is ${weekday} and the time is ${hours}:${minutes}.`);
