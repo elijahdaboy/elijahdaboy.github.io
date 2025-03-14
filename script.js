@@ -38,7 +38,7 @@ function updateWeather() {
       } else if (weatherDescription.includes("rain")) {
         weatherImage.src = "rainy.jpg";
       } else if (weatherDescription.includes("cloud")) {
-        weatherImage.src = "cloudy.jpg";
+        weatherImage.src = "pixil-gif-drawing (2).gif";
       } else {
         weatherImage.src = "default-weather.jpg";
       }
