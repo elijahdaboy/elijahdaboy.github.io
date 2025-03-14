@@ -93,4 +93,9 @@ if (minutes == 9) {
 if (minutes == 0){
   minutes = "00"
 }
+if (weatherDescription == "overcast clouds"){
+    document.createElement("img");
+    img.src = "images/pixel-gif-drawing(2).gif"
+    img.alt = ""
+}
 console.log(`Today is ${weekday} and the time is ${hours}:${minutes}.`);
