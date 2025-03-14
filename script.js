@@ -34,18 +34,14 @@ function updateWeather() {
       const weatherImage = document.getElementById("weather-image");
 
       if (weatherDescription.includes("clear")) {
-  weatherImage.src = "clear-sky.jpg";
-  weatherImageLeft.src = "clear-sky.jpg";
-} else if (weatherDescription.includes("rain")) {
-  weatherImage.src = "pixil-gif-drawing (1).gif";
-  weatherImageLeft.src = "pixil-gif-drawing (1).gif";
-} else if (weatherDescription.includes("cloud")) {
-  weatherImage.src = "images/pixil-gif-drawing (2).gif";
-  weatherImageLeft.src = "images/pixil-gif-drawing (2).gif";
-} else {
-  weatherImage.src = "default-weather.jpg";
-  weatherImageLeft.src = "default-weather.jpg";
-}
+        weatherImage.src = "clear-sky.jpg";
+      } else if (weatherDescription.includes("rain")) {
+        weatherImage.src = "rainy.jpg";
+      } else if (weatherDescription.includes("cloud")) {
+        weatherImage.src = "images/pixil-gif-drawing (2).gif";
+      } else {
+        weatherImage.src = "default-weather.jpg";
+      }
       weatherImage.style.display = "block";
     })
     .catch((error) => {
