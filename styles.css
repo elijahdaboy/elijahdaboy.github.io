@@ -54,8 +54,13 @@ position: static;
   margin: auto;
   display: block;
 }
-#weather-image-left{
+#weather-image-right{
   position:absolute;
   right:0;
+  bottom:0;
+}
+#weather-image-left{
+  position:absolute;
+  left:0;
   bottom:0;
 }
