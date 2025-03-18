@@ -34,7 +34,7 @@ function updateWeather() {
       const weatherImage = document.getElementById("weather-image");
 
       if (weatherDescription.includes("clear")) {
-        weatherImage.src = "pixil-gif-drawing (3).gif";
+        weatherImage.src = "images/pixil-gif-drawing (3).gif";
       } else if (weatherDescription.includes("rain")) {
         weatherImage.src = "images/pixil-gif-drawing (5).gif";
       } else if (weatherDescription.includes("cloud")) {
