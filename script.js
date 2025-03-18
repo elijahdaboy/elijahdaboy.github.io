@@ -36,7 +36,7 @@ function updateWeather() {
       if (weatherDescription.includes("clear")) {
         weatherImage.src = "clear-sky.jpg";
       } else if (weatherDescription.includes("rain")) {
-        weatherImage.src = "rainy.jpg";
+        weatherImage.src = "images/pixil-gif-drawing (5).gif";
       } else if (weatherDescription.includes("cloud")) {
         weatherImage.src = "images/pixil-gif-drawing (2).gif";
       } else {
