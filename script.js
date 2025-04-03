@@ -1,4 +1,4 @@
-const apiKey = "bd5e378503939ddaee76f12ad7a97608";
+const apiKey = "e7704bc895b4a8d2dfd4a29d404285b6";
 let measurement = "metric";
 
 function choose(choice) {
@@ -35,6 +35,21 @@ function updateWeather() {
       console.error("Error fetching weather data:", error);
     });
 }
+
+function toggleDarkMode() {
+  const body = document.body;
+  const toggleButton = document.getElementById("toggleMode");
+
+  body.classList.toggle("dark-mode");
+
+  if (body.classList.contains("dark-mode")) {
+    toggleButton.textContent = "Switch to Light Mode";
+  } else {
+    toggleButton.textContent = "Switch to Dark Mode";
+  }
+}
+
+document.getElementById("toggleMode").addEventListener("click", toggleDarkMode);
 
 setInterval(updateWeather, 300000);
 
