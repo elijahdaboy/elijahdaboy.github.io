@@ -30,17 +30,6 @@ function updateWeather() {
         <p>Temperature: ${temperature}${measureprint}</p>
         <p>Weather: ${weatherDescription}</p>
       `;
-
-      const weatherImage = document.getElementById("weather-image");
-
-      if (weatherDescription.includes("clear")) {
-        weatherImage.src = "images/pixil-gif-drawing (3).gif";
-      } else if (weatherDescription.includes("rain")) {
-        weatherImage.src = "images/pixil-gif-drawing (5).gif";
-      } else if (weatherDescription.includes("cloud")) {
-        weatherImage.src = "images/pixil-gif-drawing (2).gif";
-      }
-      weatherImage.style.display = "block";
     })
     .catch((error) => {
       console.error("Error fetching weather data:", error);
