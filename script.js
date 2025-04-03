@@ -44,7 +44,23 @@ function toggleDarkMode() {
 
   if (body.classList.contains("dark-mode")) {
     toggleButton.textContent = "Switch to Light Mode";
+    localStorage.setItem("theme", "dark-mode");
   } else {
+    toggleButton.textContent = "Switch to Dark Mode";
+    localStorage.setItem("theme", "light-mode");
+  }
+}
+
+function loadThemePreference() {
+  const savedTheme = localStorage.getItem("theme");
+  const body = document.body;
+  const toggleButton = document.getElementById("toggleMode");
+
+  if (savedTheme === "dark-mode") {
+    body.classList.add("dark-mode");
+    toggleButton.textContent = "Switch to Light Mode";
+  } else {
+    body.classList.remove("dark-mode");
     toggleButton.textContent = "Switch to Dark Mode";
   }
 }
@@ -55,6 +71,8 @@ setInterval(updateWeather, 300000);
 
 document.getElementById("getWeather").addEventListener("click", updateWeather);
 
+loadThemePreference();
+
 const now = new Date();
 const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const weekday = weekdays[now.getDay()];
@@ -62,3 +80,6 @@ const hours = now.getHours();
 const minutes = now.getMinutes().toString().padStart(2, "0");
 
 console.log(`Today is ${weekday} and the time is ${hours}:${minutes}.`);
+
+const savedTheme = localStorage.getItem("theme");
+localStorage.setItem("theme", "dark-mode");
