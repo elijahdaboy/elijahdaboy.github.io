@@ -59,7 +59,11 @@ function loadThemePreference() {
   if (savedTheme === "dark-mode") {
     body.classList.add("dark-mode");
     toggleButton.textContent = "Switch to Light Mode";
+  } else if (savedTheme === "light-mode") {
+    body.classList.remove("dark-mode");
+    toggleButton.textContent = "Switch to Dark Mode";
   } else {
+    localStorage.setItem("theme", "light-mode");
     body.classList.remove("dark-mode");
     toggleButton.textContent = "Switch to Dark Mode";
   }
