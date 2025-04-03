@@ -80,6 +80,3 @@ const hours = now.getHours();
 const minutes = now.getMinutes().toString().padStart(2, "0");
 
 console.log(`Today is ${weekday} and the time is ${hours}:${minutes}.`);
-
-const savedTheme = localStorage.getItem("theme");
-localStorage.setItem("theme", "dark-mode");
