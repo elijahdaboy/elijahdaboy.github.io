@@ -1,29 +1,52 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    <link rel="stylesheet" href="styles.css" />
-    <meta charset="UTF-8" />
-    <h1>Welcome to Brooklyn Guy Weather, the best way to get the current weather!</h1>
-    <img width="150" 
-      src="images/openweather-logo-png_seeklogo-440755.png"
-      alt="Powered by OpenWeatherMap" class="weather"
-    />
-    <img width="300px"
-      src="images/sml-brooklyn-guy.gif"
-      alt="" class="brook">
-    <input type="text" id="city" placeholder="Enter city name" />
-    <button id="f" onclick="choose('imperial')">Fahrenheit</button>
-    <button id="c" onclick="choose('metric')">Celsius</button>
-    <button id="getWeather">Get Weather</button>
-    <h5><div id="weatherResult"></div></h5>
-    <img id="weather-image" width="300px" style="display: none;" alt="Weather Image">
-    <script src="script.js"></script>
-    <h3>
-      <script>
-        document.write("The current time is " + hours + ":" + minutes +" on a " + weekday + " (Refresh page for updated time)")
-      </script>
-    </h3>
-    <h4><a href="http://getoutsideandplay.ca/wp-content/uploads/2020/05/How-to-Dress-for-the-Weather-STANDARD.pdf"
-           >List of recommended clothing for weather conditions</a> </h4>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brooklyn Guy Weather</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Brooklyn Guy Weather</h1>
+    <p>The best way to get the current weather!</p>
+  </header>
+
+  <main>
+    <section class="weather-section">
+      <img src="images/openweather-logo-png_seeklogo-440755.png" alt="Powered by OpenWeatherMap" class="weather-logo" />
+      <img src="images/sml-brooklyn-guy.gif" alt="Brooklyn Guy" class="brooklyn-guy" />
+
+      <div class="input-container">
+        <input type="text" id="city" placeholder="Enter city name">
+        <div class="button-group">
+          <button id="f" onclick="choose('imperial')">Fahrenheit</button>
+          <button id="c" onclick="choose('metric')">Celsius</button>
+          <button id="getWeather">Get Weather</button>
+        </div>
+      </div>
+
+      <div id="weatherResult" class="weather-result"></div>
+    </section>
+
+    <section class="info-section">
+      <h3 id="current-time"></h3>
+      <h4>
+        <a href="http://getoutsideandplay.ca/wp-content/uploads/2020/05/How-to-Dress-for-the-Weather-STANDARD.pdf"
+          target="_blank">
+          List of recommended clothing for weather conditions
+        </a>
+      </h4>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Brooklyn Guy Weather. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
