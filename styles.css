@@ -1,10 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #007BFF;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.weather-section {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+.weather-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.brooklyn-guy {
+  width: 200px;
+  margin: 20px auto;
+}
+
+.input-container {
+  margin: 20px 0;
+}
+
+input[type="text"] {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.weather-result {
+  margin: 20px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.weather-image {
+  width: 150px;
+  margin: 20px auto;
+}
+
+.info-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.info-section h3 {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.info-section h4 a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.info-section h4 a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
 h1 {
   font-size: 40px;
   font-family: Trebuchet MS, sans-serif;
   text-align: center;
-}
-body {
-  background-color: #FFFFFF;
 }
 
 input {
@@ -14,59 +133,147 @@ input {
   background-color: #FFFFFF;
   border: none;
   margin: auto;
-  font-size: 30px;
 }
+
 #getWeather {
-  position: static;
-  top: -500px;
-  background-color: #FFFFFF;
-  margin: auto;
+  position: relative;
+  top: 0;
+  background-color: #007BFF;
+  color: #FFFFFF;
+  margin: 10px auto;
   display: block;
-  font-size: 20px;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+
+#getWeather:hover {
+  background-color: #0056b3;
+}
+
 h3 {
   position: static;
   top: -500px;
   text-align: center;
 }
+
 h4 {
   position: static;
   top: -500px;
   left: px;
   text-align: center;
 }
-h5{
+
+h5 {
   position: static;
   text-align: center;
 }
-.brook{
+
+.brook {
   position: static;
   left: px;
   top: 50px;
   display: block;
   margin: auto;
 }
-.weather{
+
+.weather {
   position: static;
   left: px;
   top: 50px;
   display: block;
   margin: auto;
 }
-#f{
-position: static;
+
+#f {
+  position: static;
   top: -500px;
   margin: auto;
   display: block;
 }
-#c{
-position: static;
+
+#c {
+  position: static;
   top: -500px;
   margin: auto;
   display: block;
 }
-#weather-image{
-  position: fixed;
-  bottom: 0;
-  right: 0;
+
+#weather-image {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .weather-section {
+    padding: 15px;
+    margin: 10px auto;
+  }
+
+  .brooklyn-guy {
+    width: 150px;
+  }
+
+  input[type="text"] {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .weather-image {
+    width: 120px;
+  }
+
+  .info-section h3 {
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .weather-logo {
+    width: 120px;
+  }
+
+  .brooklyn-guy {
+    width: 120px;
+  }
+
+  input[type="text"] {
+    font-size: 0.8rem;
+  }
+
+  button {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+
+  .weather-image {
+    width: 100px;
+  }
+
+  .info-section h3 {
+    font-size: 0.9rem;
+  }
 }
