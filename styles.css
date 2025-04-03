@@ -4,6 +4,34 @@
   box-sizing: border-box;
 }
 
+body.light-mode {
+  background-color: #ffffff;
+  color: #333;
+}
+
+body.light-mode button, body.light-mode #getWeather {
+  background-color: #007BFF;
+  color: #ffffff;
+}
+
+body.light-mode button:hover, body.light-mode #getWeather:hover {
+  background-color: #0056b3;
+}
+
+body.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body.dark-mode button, body.dark-mode #getWeather {
+  background-color: #007BFF;
+  color: #ffffff;
+}
+
+body.dark-mode button:hover, body.dark-mode #getWeather:hover {
+  background-color: #0056b3;
+}
+
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f9;
@@ -27,14 +55,29 @@ header p {
   color: #555;
 }
 
+.mode-toggle {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
 .weather-section {
   text-align: center;
   margin: 20px auto;
   padding: 20px;
-  background: #fff;
+  background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 600px;
+}
+
+body.dark-mode .weather-section {
+  background: #333333;
+  color: #ffffff;
 }
 
 .weather-logo {
@@ -68,6 +111,23 @@ input[type="text"] {
   flex-wrap: wrap;
 }
 
+.button-group button, #getWeather {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+  display: inline-block;
+  text-align: center;
+}
+
+.button-group button:hover, #getWeather:hover {
+  opacity: 0.9;
+}
+
 button {
   padding: 10px 20px;
   font-size: 1rem;
@@ -87,6 +147,10 @@ button:hover {
   margin: 20px 0;
   font-size: 1.2rem;
   color: #333;
+}
+
+body.dark-mode .weather-result {
+  color: #ffffff;
 }
 
 .weather-image {
@@ -117,7 +181,7 @@ footer {
   text-align: center;
   margin-top: 40px;
   font-size: 0.9rem;
-  color: #555;
+  color: inherit;
 }
 
 h1 {
@@ -151,6 +215,20 @@ input {
 }
 
 #getWeather:hover {
+  background-color: #0056b3;
+}
+
+body.light-mode #getWeather {
+  background-color: #007BFF;
+  color: #ffffff;
+}
+
+body.dark-mode #getWeather {
+  background-color: #007BFF;
+  color: #ffffff;
+}
+
+body.dark-mode #getWeather:hover {
   background-color: #0056b3;
 }
 
