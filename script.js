@@ -3,6 +3,7 @@ let measurement = "metric";
 
 function choose(choice) {
   measurement = choice;
+  updateWeather();
 }
 
 function updateWeather() {
@@ -69,18 +70,21 @@ function loadThemePreference() {
   }
 }
 
+function updateTime() {
+  const now = new Date();
+  const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  const weekday = weekdays[now.getDay()];
+  const hours = now.getHours();
+  const minutes = now.getMinutes().toString().padStart(2, "0");
+  const currentTime = `Today is ${weekday}, ${hours}:${minutes}`;
+  document.getElementById("current-time").textContent = currentTime;
+}
+
 document.getElementById("toggleMode").addEventListener("click", toggleDarkMode);
 
-setInterval(updateWeather, 300000);
-
-document.getElementById("getWeather").addEventListener("click", updateWeather);
+document.getElementById("f").addEventListener("click", () => choose("imperial"));
+document.getElementById("c").addEventListener("click", () => choose("metric"));
 
 loadThemePreference();
-
-const now = new Date();
-const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-const weekday = weekdays[now.getDay()];
-const hours = now.getHours();
-const minutes = now.getMinutes().toString().padStart(2, "0");
-
-console.log(`Today is ${weekday} and the time is ${hours}:${minutes}.`);
+updateTime();
+setInterval(updateTime, 60000);
