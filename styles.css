@@ -25,11 +25,11 @@ body.dark-mode {
 
 body.dark-mode button, body.dark-mode #getWeather {
   background-color: #007BFF;
-  color: #ffffff;
+  color: #ff0000;
 }
 
 body.dark-mode button:hover, body.dark-mode #getWeather:hover {
-  background-color: #0056b3;
+  background-color: #8b0000;
 }
 
 body {
@@ -77,7 +77,7 @@ header p {
 
 body.dark-mode .weather-section {
   background: #333333;
-  color: #ffffff;
+  color: #ff0000;
 }
 
 .weather-logo {
@@ -228,11 +228,11 @@ body.light-mode #getWeather {
 
 body.dark-mode #getWeather {
   background-color: #007BFF;
-  color: #ffffff;
+  color: #ff0000;
 }
 
 body.dark-mode #getWeather:hover {
-  background-color: #0056b3;
+  background-color: #8b0000;
 }
 
 h3 {
