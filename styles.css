@@ -106,25 +106,25 @@ input[type="text"] {
 
 .button-group {
   display: flex;
-  justify-content: center; /* Center the buttons horizontally */
-  gap: 0; /* Remove the gap between buttons */
+  justify-content: center;
+  gap: 0; 
   margin-top: 20px;
 }
 
 .button-group button {
-  margin: 0; /* Remove any extra margins around the buttons */
-  padding: 10px 15px; /* Adjust padding to make buttons smaller */
+  margin: 0;
+  padding: 10px 15px;
   font-size: 1rem;
   color: #fff;
   background-color: #007BFF;
   border: none;
-  border-radius: 5px; /* Keep rounded corners */
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .button-group button + button {
-  margin-left: -1px; /* Overlap buttons slightly to remove any visible gap */
+  margin-left: -1px;
 }
 
 .button-group button:hover {
